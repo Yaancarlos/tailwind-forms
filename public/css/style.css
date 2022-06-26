@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.check-inp:checked ~ .checkmark {
+    background: #25DAC5;
+    border-color: #25DAC5;
+}
+
+.check-inp:checked ~ .checkmark::before {
+    display: block;
+}
+
+.checkmark::before {
+    content: "✓";
+    color: black;
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    width: 5px;
+    display: none;
+}
+
+.input-form_13:checked ~.label-form_13,
+.input-form_13:checked ~.label-form_13>.spanmark::before{
+    border-color: #25DAC5;
+}
+
+.input-form_13:checked ~.label-form_13>.spanmark::before{
+    background: #25DAC5;
+}
+
+.input-form_13:checked ~.label-form_13>.spanmark::after{
+    display: block;
+}
+
+.spanmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.spanmark:after {
+    top: .45rem;
+    left: -1.40rem;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    background: #212529;
+  }
+
+.spanmark::before {
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: 2px solid rgb(229 231 235);
+    position: absolute;
+    top: .2rem;
+    left: -1.7rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
