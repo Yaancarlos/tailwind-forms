@@ -1151,6 +1151,10 @@ video {
     width: 50%;
   }
 
+  .sm\:basis-auto {
+    flex-basis: auto;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1250,6 +1254,10 @@ video {
 
   .md\:w-\[550px\] {
     width: 550px;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:flex-auto {
